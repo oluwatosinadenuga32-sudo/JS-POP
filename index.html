@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Js POP | Premium Ceiling & Wall Designs Nationwide</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="top-bar-left">
+    <a href="tel:08143205005"><i class="fas fa-phone icon"></i>08143205005</a>
+    <a href="mailto:alowonlejoseph4@gmail.com"><i class="fas fa-envelope icon"></i>alowonlejoseph4@gmail.com</a>
+  </div>
+  <div class="top-bar-right"><i class="fas fa-location-arrow"></i> Nationwide Service Delivery</div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="nav-inner">
+    <div class="logo">
+      <div class="logo-mark">JP</div>
+      <div class="logo-text">
+        <div class="logo-name" style="color:red; font-size:40px;">Js <span>POP</span></div>
+        <div class="logo-sub">Ceiling & Wall Mastery</div>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <button class="nav-btn active" onclick="switchPage('home')" id="nav-home">Home</button>
+      <button class="nav-btn" onclick="switchPage('about')" id="nav-about">About</button>
+      <button class="nav-btn" onclick="switchPage('services')" id="nav-services">Services</button>
+      <button class="nav-btn" onclick="switchPage('gallery')" id="nav-gallery">Gallery</button>
+      <button class="nav-btn" onclick="switchPage('testimonials')" id="nav-testimonials">Reviews</button>
+      <button class="nav-btn" onclick="switchPage('contact')" id="nav-contact">Contact</button>
+    </nav>
+    <div style="display:flex;align-items:center;gap:12px;">
+      <a href="https://wa.link/yfogcw" target="_blank" class="nav-cta" style="display:flex;align-items:center;gap:8px; background-color:green; color:aliceblue; padding:8px 12px; border-radius:4px; font-size:14px;">
+        <i class="bx bxl-whatsapp" style="font-size:16px;"></i> <span class="hide-sm">WhatsApp</span>
+      </a>
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <i class="bx bx-window-close" onclick="toggleMenu()"></i>
+  <button class="m-nav-btn" onclick="switchPage('home');toggleMenu()">Home</button>
+  <button class="m-nav-btn" onclick="switchPage('about');toggleMenu()">About Us</button>
+  <button class="m-nav-btn" onclick="switchPage('services');toggleMenu()">Services</button>
+  <button class="m-nav-btn" onclick="switchPage('gallery');toggleMenu()">Gallery</button>
+  <button class="m-nav-btn" onclick="switchPage('testimonials');toggleMenu()">Reviews</button>
+  <button class="m-nav-btn" onclick="switchPage('contact');toggleMenu()">Contact</button>
+  <a href="https://wa.me/2348143205005" target="_blank" class="mobile-wa"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+</div>
+
+<main>
+
+  <!-- ======== HOME PAGE ======== -->
+  <section id="page-home" class="page active">
+    <div class="hero">
+      <div class="hero-bg-pattern"></div>
+      <div class="hero-grid-lines"></div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-badge">7+ Years of Luxury Craftsmanship</div>
+          <h1 class="hero-h1">
+            Transforming Spaces With
+            <em>Premium POP Designs</em>
+          </h1>
+          <p class="hero-desc">From elite ceiling masterworks to state-of-the-art wall transformations, We sculpt luxury into every surface, delivering premium aesthetics nationwide.</p>
+          <div class="hero-actions">
+            <button onclick="switchPage('services')" class="btn-primary">
+              <i class="fas fa-th-large"></i> Our Services
+            </button>
+            <button onclick="switchPage('contact')" class="btn-outline">
+              <i class="fas fa-pencil-alt"></i> Free Quote
+            </button>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <div class="hero-stat-num">7+</div>
+              <div class="hero-stat-label">Years Active</div>
+            </div>
+            <div>
+              <div class="hero-stat-num">200+</div>
+              <div class="hero-stat-label">Projects Done</div>
+            </div>
+            <div>
+              <div class="hero-stat-num">36</div>
+              <div class="hero-stat-label">States Covered</div>
+            </div>
+            <div>
+              <div class="hero-stat-num">100%</div>
+              <div class="hero-stat-label">Satisfaction</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-img-frame">
+            <div class="hero-img-placeholder">
+              <i class="fas fa-image"></i>
+              <img src="/Images/8964e2b7-4bf6-4d5d-837b-2b34d1f7f317.jpg"
+            </div>
+          </div>
+          <div class="hero-float-card left">
+            <div class="hero-float-icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="hero-float-text">
+              <div class="num">5★</div>
+              <div class="lbl">Rated Service</div>
+            </div>
+          </div>
+          <div class="hero-float-card top-right">
+            <div class="hero-float-icon"><i class="fas fa-tools"></i></div>
+            <div class="hero-float-text">
+              <div class="num">6</div>
+              <div class="lbl">Specialties</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="features-section">
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class='bx bx-award'></i></div>
+          <h3 class="feature-title">7+ Years Experience</h3>
+          <p class="feature-desc">Expertly led by a seasoned CEO with nearly a decade of flawless project executions across Nigeria.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class='bx bx-map'></i></div>
+          <h3 class="feature-title">Nationwide Service</h3>
+          <p class="feature-desc">No matter where you are located in Nigeria, our elite artisan team travels to transform your space.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class='bx bx-diamond'></i></div>
+          <h3 class="feature-title">Flawless Finishing</h3>
+          <p class="feature-desc">We don't just work — we sculpt luxury. Crisp lines, smooth surfaces, and robust structural safety on every job.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======== ABOUT PAGE ======== -->
+  <section id="page-about" class="page">
+    <div class="about-section">
+      <div class="about-img-stack">
+        <div class="about-img-main">
+          <div style="text-align:center;">
+            <i class="fas fa-image"></i>
+            <div>About Us<br><span style="font-size:11px;"><img src="/Images/d11489d8-0f56-455c-84f4-4db0e10846ff.jpg"></span></div>
+          </div>
+        </div>
+        <div class="about-img-accent">
+          <span class="big">7+</span>
+          <span class="sm">Years of Excellence</span>
+        </div>
+      </div>
+      <div class="about-text">
+        <div class="section-label">Who We Are</div>
+        <h2 class="section-title">Setting The <em>Gold Standard</em> In POP & Interior Finishing</h2>
+        <div class="gold-divider"></div>
+        <p>Welcome to <strong>Js POP</strong>. Under the masterful leadership of our CEO, who brings <strong>over 7 years of hands-on expertise</strong> to every site, we have become one of Nigeria's premier structural aesthetics brands.</p>
+        <p>We specialize in bridging the gap between functional structural design and modern artistic luxury. Based in <strong>Lagos</strong>, we provide <strong>nationwide service deployment</strong>, transforming residential homes, corporate offices, and luxury hotels across the country.</p>
+        <blockquote class="about-quote">
+          "Our mission is simple: to make your ceilings and walls unforgettable conversation pieces — spaces that command admiration and stand the test of time."
+          <cite>— CEO, Js POP</cite>
+        </blockquote>
+        <div class="about-values">
+          <div class="about-value">
+            <i class="fas fa-check about-value-icon"></i>
+            <div>
+              <div class="about-value-title">Quality First</div>
+              <div class="about-value-text">Premium materials, premium outcomes — no shortcuts.</div>
+            </div>
+          </div>
+          <div class="about-value">
+            <i class="fas fa-clock about-value-icon"></i>
+            <div>
+              <div class="about-value-title">On-Time Delivery</div>
+              <div class="about-value-text">We respect your schedule and honour our timelines.</div>
+            </div>
+          </div>
+          <div class="about-value">
+            <i class="fas fa-broom about-value-icon"></i>
+            <div>
+              <div class="about-value-title">Clean Execution</div>
+              <div class="about-value-text">Zero mess after project completion — always.</div>
+            </div>
+          </div>
+          <div class="about-value">
+            <i class="fas fa-headset about-value-icon"></i>
+            <div>
+              <div class="about-value-title">After-Service Support</div>
+              <div class="about-value-text">We stay available even after the job is done.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======== SERVICES PAGE ======== -->
+  <section id="page-services" class="page">
+    <div class="services-section">
+      <div class="services-header">
+        <div class="section-label">Our Capabilities</div>
+        <h2 class="section-title">What We Do <em>Exceptionally</em> Well</h2>
+        <div class="gold-divider"></div>
+        <p style="font-size:15px;color:var(--text-muted);font-weight:300;">Six premium services engineered to transform any space into a work of art.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-img">
+            <i class="fas fa-building"></i>
+            <span class="service-img-label"><img src="/Images/8964e2b7-4bf6-4d5d-837b-2b34d1f7f317.jpg"></span>
+            <span class="service-num">01</span>
+          </div>
+          <div class="service-body">
+            <span class="service-tag">Interior</span>
+            <h3 class="service-name">POP Ceiling Designs</h3>
+            <p class="service-desc">Custom modern, classic, and suspended plaster ceilings tailor-made to elevate room dynamics and architectural character.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-img">
+            <i class="fas fa-tv"></i>
+            <span class="service-img-label"><img src="/Images/c962e1d3-bddd-4ccf-88ea-96d070252aa4.jpg"></span>
+            <span class="service-num">02</span>
+          </div>
+          <div class="service-body">
+            <span class="service-tag">Feature Wall</span>
+            <h3 class="service-name">TV Stand Designs</h3>
+            <p class="service-desc">Floating and integrated POP TV wall structures designed for minimalist media luxury and seamless aesthetics.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-img">
+            <i class="fas fa-wine-glass-alt"></i>
+            <span class="service-img-label"><img src="/Images/977226da-e2df-437e-b963-050fc88bc9c9.jpg"></span>
+            <span class="service-num">03</span>
+          </div>
+          <div class="service-body">
+            <span class="service-tag">Entertainment</span>
+            <h3 class="service-name">Wall Bar Designs</h3>
+            <p class="service-desc">Custom built-in home bar and lounge walls engineered for premium entertainment spaces that wow every guest.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-img">
+            <i class="fas fa-border-all"></i>
+            <span class="service-img-label"><img src="/Images/0fd4abfa-7be5-48cb-9d0e-5a90b46721f5.jpg"></span>
+            <span class="service-num">04</span>
+          </div>
+          <div class="service-body">
+            <span class="service-tag">Surface</span>
+            <h3 class="service-name">Wall Screening</h3>
+            <p class="service-desc">Flawless surface correction and premium modern wall screening for silk-smooth textures and refined wall finishes.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-img">
+            <i class="fas fa-ruler-horizontal"></i>
+            <span class="service-img-label"><img src="/Images/92073225-5fd8-4bf3-bf1e-4b3d5675ccd5.jpg"></span>
+            <span class="service-num">05</span>
+          </div>
+          <div class="service-body">
+            <span class="service-tag">Finishing</span>
+            <h3 class="service-name">Wall Skirting</h3>
+            <p class="service-desc">Precise skirting protection and decorative linear layouts that match floor junctions beautifully and professionally.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-img">
+            <i class="fas fa-paint-roller"></i>
+            <span class="service-img-label"><img src="/Images/567ae6cc-369b-4355-8df3-afe3a63e8539.jpg">/span>
+            <span class="service-num">06</span>
+          </div>
+          <div class="service-body">
+            <span class="service-tag">Painting</span>
+            <h3 class="service-name">Wall Painting</h3>
+            <p class="service-desc">Executive interior and exterior color coats utilizing high-grade premium emulsions for lasting, vibrant coverage.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======== GALLERY PAGE ======== -->
+  <section id="page-gallery" class="page">
+    <div class="gallery-section">
+      <div class="gallery-header">
+        <div class="section-label">Portfolio</div>
+        <h2 class="section-title">Visual <em>Proof</em> of Mastery</h2>
+        <div class="gold-divider"></div>
+        <p style="font-size:15px;color:var(--text-muted);font-weight:300;">A curated selection of completed high-profile projects delivered across Nigeria.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/8964e2b7-4bf6-4d5d-837b-2b34d1f7f317.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">POP Ceiling</div>
+        </div>
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/ce2e78cf-51ff-4936-a803-36452c9aca12.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">POP Ceiling</div>
+        </div>
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/2f330e02-b6e1-439c-87ef-7977019f393b.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">POP Ceiling</div>
+        </div>
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/f72b7895-274c-45cf-839c-0c2fa688c8a7.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">POP Ceiling</div>
+        </div>
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/000f4831-26e5-4f2d-828c-c4179786d7bf.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">POP Ceiling</div>
+        </div>
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/569e3f46-2f9d-4b26-b66c-417c91611825.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">POP Ceiling</div>
+        </div>
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/a7aa1f67-761b-4d24-b5fd-b7441e8145ca.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">POP Ceiling</div>
+        </div>
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/94be7a4c-d42d-44bb-a8dd-fd9525b1707d.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">POP Ceiling</div>
+        </div>
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/2eae7e7b-e42f-4471-a5d9-d43e42db6ed1.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">POP Ceiling</div>
+        </div>
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/4fed1a29-e1f4-446a-9af1-1363532a1ad6.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">POP Ceiling</div>
+        </div>
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/0bbee8a9-92a6-4f6c-8fe3-d57cd6f442d1.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">POP Ceiling</div>
+        </div>
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/83d030f1-3924-4b56-98e4-a24a64e5f288.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">POP Ceiling</div>
+        </div>
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/20e4bf4c-6375-489f-afc3-b477df0d0cf9.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">TV Stand</div>
+        </div>
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/d11489d8-0f56-455c-84f4-4db0e10846ff.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">Wall Bar</div>
+        </div>
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/0fd4abfa-7be5-48cb-9d0e-5a90b46721f5.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">Screening</div>
+        </div>
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/567ae6cc-369b-4355-8df3-afe3a63e8539.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">Wall Painting</div>
+        </div>
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/24979240-2231-47a1-ad0e-3a41d8024421.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">Wall Painting</div>
+        </div>
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/eadb3e04-263e-40f8-ad51-03b0d6be5a29.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">Wall Painting</div>
+        </div>
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/c0aef182-3ab0-498e-8e08-2fee3844d4bb.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">Wall Painting</div>
+        </div>
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/48a7f0b9-a56e-4a0b-8942-e74186d7863e.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">Wall Painting</div>
+        </div>
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/cc0f6c58-6ff8-4b68-8dbd-42f4c6b99452.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">Wall Painting</div>
+        </div>
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/7d882a9f-61d5-4d35-a6a3-6e5f789d5e30.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">Wall Painting</div>
+        </div>
+          <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/2c04da9e-a289-4ca2-92fd-0cd3b6544617.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">Wall Painting</div>
+        </div>
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/3bf9d350-919b-4c13-9e7f-606ea2347fe8.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">Wall skerting design</div>
+        </div>
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/07932994-0d88-4b9c-93c5-03f3e15a2a1a.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">Wall Painting</div>
+        </div>
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/96e5169f-669b-4f02-b0a8-96bc8c25f86c.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">Wall Painting</div>
+        </div>
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/e31d789f-6ad5-4e30-bcd9-57a9c6d27a8d.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">Wall Painting</div>
+        </div>
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/5a263af3-35b0-4a6b-bffb-c37b916698e8.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">Wall Painting</div>
+        </div>
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/073ba22c-7b00-4203-aa4c-0e1c54968270.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">Wall Painting</div>
+        </div>
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/ffbecbef-5172-407d-af9d-b5b65f03e82f.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">Wall Painting</div>
+        </div>
+        <div class="gallery-item">
+          <i class="fas fa-image"></i>
+          <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;"><img src="/Images/e682f4d0-180a-4a47-99e9-0fe5bc193708.jpg"></span>
+          <div class="gallery-overlay"><i class="fas fa-expand gallery-overlay-icon"></i></div>
+          <div class="gallery-label">Wall Painting</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======== TESTIMONIALS PAGE ======== -->
+  <section id="page-testimonials" class="page">
+    <div class="testimonials-outer">
+      <div class="testimonials-section">
+        <div class="testimonials-header">
+          <div class="section-label">Client Reviews</div>
+          <h2 class="section-title">What Our <em>Clients</em> Say</h2>
+          <div class="gold-divider" style="margin:20px auto 0;"></div>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testi-card">
+            <span class="testi-quote-mark">"</span>
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">Js POP did the ceiling for my duplex in Abuja. The team traveled down and executed everything within a week. Absolute masterclass — exceeded every expectation!</p>
+            <div class="testi-author">
+              <div class="testi-avatar">E</div>
+              <div>
+                <div class="testi-name">Chief Emeka O.</div>
+                <div class="testi-location">Abuja Project</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <span class="testi-quote-mark">"</span>
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">Their TV stand designs are absolutely modern. They screened my living room walls and it feels as smooth as glass. Highly recommend the CEO's professionalism.</p>
+            <div class="testi-author">
+              <div class="testi-avatar">A</div>
+              <div>
+                <div class="testi-name">Mrs. Adebayo</div>
+                <div class="testi-location">Ikeja, Lagos</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <span class="testi-quote-mark">"</span>
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">Clean jobs, perfect lines, zero mess after completion. Best POP company I have dealt with in my 7 years as a building contractor in Lagos.</p>
+            <div class="testi-author">
+              <div class="testi-avatar">T</div>
+              <div>
+                <div class="testi-name">Engr. Tunde J.</div>
+                <div class="testi-location">Lekki Project</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======== CONTACT PAGE ======== -->
+  <section id="page-contact" class="page">
+    <div class="contact-section">
+      <div class="contact-header">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title">Get A <em>Free Quote</em> Today</h2>
+        <div class="gold-divider" style="margin:20px auto 0;"></div>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-info">
+          <h3 class="contact-info-title">Contact Details</h3>
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class='bx bx-phone'></i></div>
+            <div>
+              <div class="contact-detail-label">Hotline & WhatsApp</div>
+              <div class="contact-detail-val"><a href="tel:08143205005">08143205005</a></div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class='bx bx-envelope' ></i></div>
+            <div>
+              <div class="contact-detail-label">Email Address</div>
+              <div class="contact-detail-val"><a href="mailto:alowonlejoseph4@gmail.com">alowonlejoseph4@gmail.com</a></div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class='bx bx-map' ></i></div>
+            <div>
+              <div class="contact-detail-label">Office Address</div>
+              <div class="contact-detail-val">4/5 Ola Ibrahim Close, Vulcanizer, off Isuti Road, Egan, Igando, Lagos State.</div>
+            </div>
+          </div>
+          <a href="https://wa.me/2348143205005" target="_blank" class="wa-button">
+            <i class="fab fa-whatsapp" style="font-size:18px;"></i> Chat on WhatsApp
+          </a>
+        </div>
+        <div class="contact-form-wrap">
+          <h3 class="form-title">Send Us a Message</h3>
+          <p class="form-subtitle">Fill the form below and we'll get back to you within 24 hours with a custom quote.</p>
+          <form
+            action="https://formspree.io/f/mbdedpoz"
+            method="POST"
+                  >
+            <label>
+                <h3 >Your email</h3>
+                <input class="contactt" type="email" name="email" placeholder="alowonlejoseph4@gmail.com">
+            </label>
+            <label>
+                <h3 >Your message</h3>
+              <textarea class="contactt" name="message" placeholder="Enter your message"></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button class="contactt" type="submit">Send</button>
+</form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-name">Js <span>POP</span></div>
+        <p class="footer-desc">Premium plaster layouts, custom POP finishes, and pristine paint works crafted for every corner of Nigeria.</p>
+        <div class="footer-socials">
+          <a href="https://wa.link/yfogcw" target="_blank" class="social-icon" title="WhatsApp"  style="display:flex;align-items:center;gap:8px; background-color:green; color:aliceblue; padding:8px 12px; border-radius:4px; font-size:14px;"><i class="bx bxl-whatsapp"></i></a>
+          <a href="mailto:alowonlejoseph4@gmail.com" class="social-icon" title="Email" style="display:flex;align-items:center;gap:8px; background-color:white; color:red; padding:8px 12px; border-radius:4px; font-size:14px;"><i class='bx bx-envelope'></i></a>
+          <a href="tel:08143205005" class="social-icon" title="Call" style="display:flex;align-items:center;gap:8px; background-color:red; color:aliceblue; padding:8px 12px; border-radius:4px; font-size:14px;"><i class='bx bx-phone'></i></a>
+        </div>
+        <i " style="font-size:16px;"></i> <span class="hide-sm">WhatsApp</span>
+      </div>
+      <div>
+        <div class="footer-col-title">Quick Links</div>
+        <div class="footer-links">
+          <button class="footer-link" onclick="switchPage('home')">Home</button>
+          <button class="footer-link" onclick="switchPage('about')">About Us</button>
+          <button class="footer-link" onclick="switchPage('services')">Our Services</button>
+          <button class="footer-link" onclick="switchPage('gallery')">Gallery</button>
+          <button class="footer-link" onclick="switchPage('testimonials')">Client Reviews</button>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Services</div>
+        <div class="footer-links">
+          <span class="footer-link" style="cursor:default;">POP Ceiling Designs</span>
+          <span class="footer-link" style="cursor:default;">TV Stand Designs</span>
+          <span class="footer-link" style="cursor:default;">Wall Bar Designs</span>
+          <span class="footer-link" style="cursor:default;">Wall Screening</span>
+          <span class="footer-link" style="cursor:default;">Wall Painting</span>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact Us</div>
+        <div class="footer-contact-item">
+          <i class="fas fa-phone-alt"></i>
+          <span><a href="tel:08143205005" style="color:inherit;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='inherit'">08143205005</a></span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-envelope"></i>
+          <span><a href="mailto:alowonlejoseph4@gmail.com" style="color:inherit;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='inherit'">alowonlejoseph4@gmail.com</a></span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>4/5 Ola Ibrahim Close, Vulcanizer, off Isuti Road, Egan, Igando, Lagos State.</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">&copy; 2026 <span>Js POP</span> Designs. All Rights Reserved.</div>
+      <div class="footer-copy">Crafted for <span>Absolute Luxury.</span></div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
